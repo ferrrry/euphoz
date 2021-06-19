@@ -1,9 +1,5 @@
-# TOPICS
+# Windows-Shake:
+ADD REG_DWORD "DisallowShaking" value=1
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 
-Windows-Shake
-Scroll-Wheel Flip
-
-
-# CODE
-
-
+# 
