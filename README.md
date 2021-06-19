@@ -21,6 +21,7 @@ choco install visualstudio2019community
 -microsoft-windows-terminal
 -powertoys
 -filezilla
+-putty
 -
 
 
