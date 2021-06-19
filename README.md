@@ -20,7 +20,9 @@ choco install visualstudio2019community
 -vscode (visual studio code)
 -microsoft-windows-terminal
 -powertoys
+-filezilla
 -
+
 
 
 
