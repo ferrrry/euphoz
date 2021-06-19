@@ -22,6 +22,7 @@ choco install visualstudio2019community
 -powertoys
 -filezilla
 -putty
+-tor-browser
 -
 
 
