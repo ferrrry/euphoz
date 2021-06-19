@@ -24,6 +24,8 @@ choco install visualstudio2019community
 -putty
 -tor-browser
 -teamspeak
+-virtualbox
+-vmware-workstation-player
 -
 
 
