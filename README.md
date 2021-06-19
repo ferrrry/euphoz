@@ -23,6 +23,7 @@ choco install visualstudio2019community
 -filezilla
 -putty
 -tor-browser
+-teamspeak
 -
 
 
