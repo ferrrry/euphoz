@@ -67,7 +67,12 @@ choco install dontsleep
 choco install caffeine
 
 
+lines (4 sloc) 139 Bytes
+# Windows-Shake:
+ADD REG_DWORD "DisallowShaking" value=1
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 
+#
 
 
 # Docs:
