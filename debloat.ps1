@@ -28,9 +28,8 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
-$Form.text                       = "Apps, Debloat, Tweaks"
+$Form.text                       = "Apps, Debloat & Tweaks"
 $Form.TopMost                    = $false
-$form.startposition              = "CenterScreen"
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
 $Panel1.height                   = 156
@@ -38,12 +37,11 @@ $Panel1.width                    = 1032
 $Panel1.location                 = New-Object System.Drawing.Point(9,90)
 
 $Label1                          = New-Object system.Windows.Forms.Label
-$Label1.text                     = "- Software -"
-$label1.TextAlign                = "middlecenter"
+$Label1.text                     = "-- Software --"
 $Label1.AutoSize                 = $true
-$Label1.width                    = 990
+$Label1.width                    = 25
 $Label1.height                   = 10
-$Label1.location                 = New-Object System.Drawing.Point(10,30)
+$Label1.location                 = New-Object System.Drawing.Point(400,30)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',30)
 
 $installchoco                    = New-Object system.Windows.Forms.Button
@@ -142,10 +140,10 @@ $Label2.text                     = "(Chocolatey Required for installs)"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(478,3)
+$Label2.location                 = New-Object System.Drawing.Point(400,0)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Panel2                          = New-Object system.Windows.Forms.Panel
+$Panel2                          = New-Object system.Windows.Forms.P anel
 $Panel2.height                   = 159
 $Panel2.width                    = 588
 $Panel2.location                 = New-Object System.Drawing.Point(9,293)
@@ -242,7 +240,7 @@ $securityhigh.location           = New-Object System.Drawing.Point(244,119)
 $securityhigh.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',15,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label5                          = New-Object system.Windows.Forms.Label
-$Label5.text                     = ""
+$Label5.text                     = "WHAT?"
 $Label5.AutoSize                 = $true
 $Label5.width                    = 150
 $Label5.height                   = 10
@@ -318,13 +316,13 @@ $Label15.text                    = "Windows Update"
 $Label15.AutoSize                = $true
 $Label15.width                   = 25
 $Label15.height                  = 10
-$Label15.location                = New-Object System.Drawing.Point(58,459)
+$Label15.location                = New-Object System.Drawing.Point(400,459)
 $Label15.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $Panel4                          = New-Object system.Windows.Forms.Panel
 $Panel4.height                   = 168
 $Panel4.width                    = 340
-$Panel4.location                 = New-Object System.Drawing.Point(9,491)
+$Panel4.location                 = New-Object System.Drawing.Point(350,491)
 
 $defaultwindowsupdate            = New-Object system.Windows.Forms.Button
 $defaultwindowsupdate.text       = "Default Settings"
@@ -373,6 +371,14 @@ $Label19.location                = New-Object System.Drawing.Point(71,103)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 
+
+
+
+$Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
+$Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
+$Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
+$Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
 
 
 $installchoco.Add_Click({
