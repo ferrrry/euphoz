@@ -30,6 +30,7 @@ $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
 $Form.text                       = "Apps, Debloat & Tweaks"
 $Form.TopMost                    = $false
+$form.startposition              = "CenterScreen"
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
 $Panel1.height                   = 156
