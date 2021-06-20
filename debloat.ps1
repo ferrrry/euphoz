@@ -30,6 +30,7 @@ $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
 $Form.text                       = "Form"
 $Form.TopMost                    = $false
+$form.startposition              = "CenterScreen"
 
 $Panel1                          = New-Object system.Windows.Forms.Panel
 $Panel1.height                   = 156
@@ -369,51 +370,6 @@ $Label19.width                   = 25
 $Label19.height                  = 10
 $Label19.location                = New-Object System.Drawing.Point(71,103)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
-$Label20                         = New-Object system.Windows.Forms.Label
-$Label20.text                    = "Instructions"
-$Label20.AutoSize                = $true
-$Label20.width                   = 169
-$Label20.height                  = 23
-$Label20.location                = New-Object System.Drawing.Point(581,463)
-$Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
-
-$Label21                         = New-Object system.Windows.Forms.Label
-$Label21.text                    = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
-$Label21.AutoSize                = $true
-$Label21.width                   = 150
-$Label21.height                  = 10
-$Label21.location                = New-Object System.Drawing.Point(390,507)
-$Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
-$Label22                         = New-Object system.Windows.Forms.Label
-$Label22.text                    = "(Unsure!?... Just apply Essential Tweaks)"
-$Label22.AutoSize                = $true
-$Label22.width                   = 150
-$Label22.height                  = 10
-$Label22.location                = New-Object System.Drawing.Point(4,14)
-$Label22.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
-$Label23                         = New-Object system.Windows.Forms.Label
-$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
-$Label23.AutoSize                = $true
-$Label23.width                   = 150
-$Label23.height                  = 10
-$Label23.location                = New-Object System.Drawing.Point(390,529)
-$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
-$PictureBox1                     = New-Object system.Windows.Forms.PictureBox
-$PictureBox1.width               = 412
-$PictureBox1.height              = 125
-$PictureBox1.location            = New-Object System.Drawing.Point(449,541)
-$PictureBox1.imageLocation       = "https://christitus.com/images/titus-toolbox.png"
-$PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
-$lightmode                       = New-Object system.Windows.Forms.Button
-$lightmode.text                  = "Light Mode"
-$lightmode.width                 = 150
-$lightmode.height                = 30
-$lightmode.location              = New-Object System.Drawing.Point(417,45)
-$lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
 $Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
