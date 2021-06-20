@@ -28,7 +28,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
-$Form.text                       = "Form"
+$Form.text                       = "Apps, Debloat, Tweaks"
 $Form.TopMost                    = $false
 $form.startposition              = "CenterScreen"
 
@@ -38,9 +38,10 @@ $Panel1.width                    = 1032
 $Panel1.location                 = New-Object System.Drawing.Point(9,90)
 
 $Label1                          = New-Object system.Windows.Forms.Label
-$Label1.text                     = "Program Installation"
+$Label1.text                     = "- Software -"
+$label1.TextAlign                = "middlecenter"
 $Label1.AutoSize                 = $true
-$Label1.width                    = 25
+$Label1.width                    = 990
 $Label1.height                   = 10
 $Label1.location                 = New-Object System.Drawing.Point(10,30)
 $Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',30)
@@ -371,11 +372,7 @@ $Label19.height                  = 10
 $Label19.location                = New-Object System.Drawing.Point(71,103)
 $Label19.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
-$Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
-$Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
-$Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
+
 
 
 $installchoco.Add_Click({
