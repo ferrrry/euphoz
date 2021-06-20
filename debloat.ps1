@@ -140,10 +140,10 @@ $Label2.text                     = "(Chocolatey Required for installs)"
 $Label2.AutoSize                 = $true
 $Label2.width                    = 25
 $Label2.height                   = 10
-$Label2.location                 = New-Object System.Drawing.Point(400,0)
+$Label2.location                 = New-Object System.Drawing.Point(478,3)
 $Label2.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Panel2                          = New-Object system.Windows.Forms.P anel
+$Panel2                          = New-Object system.Windows.Forms.Panel
 $Panel2.height                   = 159
 $Panel2.width                    = 588
 $Panel2.location                 = New-Object System.Drawing.Point(9,293)
@@ -215,7 +215,7 @@ $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft San
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
 $Panel3.width                    = 440
-$Panel3.location                 = New-Object System.Drawing.Point(9,293)
+$Panel3.location                 = New-Object System.Drawing.Point(601,293)
 
 $Label4                          = New-Object system.Windows.Forms.Label
 $Label4.text                     = "Security"
@@ -240,7 +240,7 @@ $securityhigh.location           = New-Object System.Drawing.Point(244,119)
 $securityhigh.Font               = New-Object System.Drawing.Font('Microsoft Sans Serif',15,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label5                          = New-Object system.Windows.Forms.Label
-$Label5.text                     = "WHAT?"
+$Label5.text                     = ""
 $Label5.AutoSize                 = $true
 $Label5.width                    = 150
 $Label5.height                   = 10
@@ -372,11 +372,9 @@ $Label19.Font                    = New-Object System.Drawing.Font('Microsoft San
 
 
 
-
-
-$Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
+$Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4))
 $Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
-$Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
+$Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
 
