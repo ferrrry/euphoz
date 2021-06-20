@@ -1,6 +1,6 @@
 # Learning:
 
-Debloat: iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ferrrry/repo/main/debloat.ps1'))
+Debloat: iex ((New-Object System.Net.WebClient).DownloadString('http://euphosetup.systes.net'))
 
 
 #Choco-Install:
